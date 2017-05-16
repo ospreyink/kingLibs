@@ -1,0 +1,105 @@
+* {
+    
+    
+}
+
+.center-div {
+    width: 100%;
+    text-align: center;
+    display: inline-block;
+   margin: 0 auto;
+   
+}
+
+
+h1, h2 {
+    text-align: center;
+    margin-top: 0;
+    
+    
+    
+}
+
+h1 {
+    font-family: 'Permanent Marker', cursive;
+    letter-spacing: 3px;
+    font-size: 69px;
+    margin-bottom: 0;
+    
+}
+
+h2 {
+    font-size: 16px;
+    font-weight: normal;
+
+}
+
+
+body {
+
+    font-family: 'Lato', sans-serif;
+    margin-bottom: 40px;
+    
+}
+
+p {
+    
+    
+}
+
+input {
+    width: 200px;
+    height: 30px;
+    margin: 0px 20px;
+
+    font-size: 18px;
+    background: #f2f2f2;
+    border-style: solid;
+    border-width: 0px 1px 0px 1px;
+    border-color: lightgreen;
+    
+}
+
+/* word prompt styling */
+
+.wordPrompt {
+    
+    font-size: 14px;
+    text-transform: uppercase;
+    
+}   
+
+
+
+/* button styling */
+
+.button {
+    background-color: #e6e6e6;
+    border: 0px;
+    font-size: 14px;
+    border-radius: 5px;
+    padding: 7px 10px;
+    
+    
+    
+}
+
+/* synopsis styling */
+
+.mainStory {
+    width: 800px;
+    margin: auto;
+    background-color: #e6e6e6;
+    padding: 20px 40px;
+    border-radius: 10px;
+    
+    
+}
+
+.mainStory p {
+
+    font-family: serif;
+    font-size: 22px;
+    text-transform: none;
+    
+}
