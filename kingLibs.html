@@ -9,131 +9,130 @@
     <link rel="stylesheet" type="text/css" href="kingLibs.css">
     <link href="https://fonts.googleapis.com/css?family=Permanent+Marker" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css?family=Lato" rel="stylesheet">
-    
-
-
-    
-
 </head>
-
-
 
 <body>
 
 <!-- Header -->
 
-		<header>
-			<h1>King Libs</h1>
-			<h2>A Mad Lib&ndash;Style JavaScript Practice by OspreyInk</h2>
-		</header>
-
-
+<header>
+    <h1>King Libs</h1>
+    <h2>A Mad Lib&ndash;Style JavaScript Practice by OspreyInk</h2>
+</header>
 
 <!-- Word Input -->
 
-<div class="center-div">
-    <p><button class="button" type="button">I'm lazy &mdash; RANDOMIZE ALL!</button></p>
+<div class="centerDiv" style="margin-bottom: 20px">
+  <button id="randomizeAllButton" class="button" type="button">I'm lazy &mdash; RANDOMIZE ALL!</button>
+</div>
 
-
-    <div>
-
-        <div>
-            <div class="wordPrompt" style="width:33%; display:inline-block"><p class="wordPrompt">Adjective</p></div>   
-            <div style="width:33%; display:inline-block"><input type="text" name="adjective1"></div>
-            <div class="randomizeCol" style="width:33%; display:inline-block"><button class="button button2" type="button">Randomize</button></div>
-        </div>
-
-        <div>
-            <div class="wordPrompt" style="width:33%; display:inline-block"><p class="wordPrompt">Noun (plural)</p></div>   
-            <div style="width:33%; display:inline-block"><input type="text" name=""></div>
-            <div class="randomizeCol" style="width:33%; display:inline-block"><button class="button button2" type="button">Randomize</button></div>
-        </div>
-
-        <div>
-            <div class="wordPrompt" style="width:33%; display:inline-block"><p class="wordPrompt">Verb (past tense)</p></div>   
-            <div style="width:33%; display:inline-block"><input type="text" name=""></div>
-            <div class="randomizeCol" style="width:33%; display:inline-block"><button class="button button2" type="button">Randomize</button></div>
-        </div>
-
-        <div>
-            <div class="wordPrompt" style="width:33%; display:inline-block"><p class="wordPrompt">Noun</p></div>   
-            <div style="width:33%; display:inline-block"><input type="text" name=""></div>
-            <div class="randomizeCol" style="width:33%; display:inline-block"><button class="button button2" type="button">Randomize</button></div>
-        </div>
-
-        <div>
-            <div class="wordPrompt" style="width:33%; display:inline-block"><p class="wordPrompt">Noun (plural)</p></div>   
-            <div style="width:33%; display:inline-block"><input type="text" name=""></div>
-            <div class="randomizeCol" style="width:33%; display:inline-block"><button class="button button2" type="button">Randomize</button></div>
-        </div>
-
-        <div>
-            <div class="wordPrompt" style="width:33%; display:inline-block"><p class="wordPrompt">Emotion</p></div>   
-            <div style="width:33%; display:inline-block"><input type="text" name=""></div>
-            <div class="randomizeCol" style="width:33%; display:inline-block"><button class="button button2" type="button">Randomize</button></div>
-        </div>
-
-        <div>
-            <div class="wordPrompt" style="width:33%; display:inline-block"><p class="wordPrompt">Noun</p></div>   
-            <div style="width:33%; display:inline-block"><input type="text" name=""></div>
-            <div class="randomizeCol" style="width:33%; display:inline-block"><button class="button button2" type="button">Randomize</button></div>
-        </div>	
-
-        <div>
-            <div class="wordPrompt" style="width:33%; display:inline-block"><p class="wordPrompt">Place</p></div>   
-            <div style="width:33%; display:inline-block"><input type="text" name=""></div>
-            <div class="randomizeCol" style="width:33%; display:inline-block"><button class="button button2" type="button">Randomize</button></div>
-        </div>		
-
-        <div>
-            <div class="wordPrompt" style="width:33%; display:inline-block"><p class="wordPrompt">Noun (plural)</p></div>   
-            <div style="width:33%; display:inline-block"><input type="text" name=""></div>
-            <div style="width:33%; display:inline-block"><button class="button button2" type="button">Randomize</button></div>
-        </div>
-
-        <div>
-            <div class="wordPrompt" style="width:33%; display:inline-block"><p class="wordPrompt">Verb</p></div>   
-            <div style="width:33%; display:inline-block"><input type="text" name=""></div>
-            <div style="width:33%; display:inline-block"><button class="button button2" type="button">Randomize</button></div>
-        </div>
-
-        <div>
-            <div class="wordPrompt" style="width:33%; display:inline-block"><p class="wordPrompt">Noun (plural)</p></div>   
-            <div style="width:33%; display:inline-block"><input type="text" name=""></div>
-            <div style="width:33%; display:inline-block"><button class="button button2" type="button">Randomize</button></div>
-        </div>
-
-        <div>
-            <div class="wordPrompt" style="width:33%; display:inline-block"><p class="wordPrompt">Noun (plural)</p></div>   
-            <div style="width:33%; display:inline-block"><input type="text" name=""></div>
-            <div style="width:33%; display:inline-block"><button class="button button2" type="button">Randomize</button></div>
-        </div>
-
+<div class="wrapper">
+    <div class="one">
+        <p class="wordPrompt">Adjective</p>
     </div>
-
-
-    <p><button class="button" type="button">Generate Synopsis</button></p>
-
-
+    <div class="two">
+        <input type="text" id="adj1Input">
+    </div>
+    <div class="three">
+        <button id="adj1RandomButton" class="button">Randomize</button>
+    </div>
+    <div class="four">
+        <p class="wordPrompt">Plural Noun</p>
+    </div>
+    <div class="five">
+        <input type="text" id="nounPl1Input">
+    </div>
+    <div class="six">
+        <button id="nounPl1RandomButton" class="button">Randomize</button>
+    </div>
+    <div class="seven">
+        <p class="wordPrompt one">Past-tense Verb<p></p>
+    </div>
+    <div class="eight">
+        <input type="text" id="verbPastTenseInput">
+    </div>
+    <div class="nine">
+        <button id="verbPastTenseRandomButton" class="button">Randomize</button>  
+    </div>
+    <div class="ten">
+        <p class="wordPrompt">Noun</p>
+    </div>
+    <div class="eleven">
+        <input type="text" id="noun1Input">
+    </div>
+    <div class="twelve">
+        <button id="noun1RandomButton" class="button">Randomize</button>
+    </div>
+    <div class="thirteen">
+        <p class="wordPrompt">Adjective</p>
+    </div>
+    <div class="fourteen">
+        <input type="text" id="adj2Input">
+    </div>
+    <div class="fifteen">
+        <button id="adj2RandomButton" class="button">Randomize</button>
+    </div>
+    <div class="sixteen">
+        <p class="wordPrompt">Plural Noun</p>
+    </div>
+    <div class="seventeen">
+        <input type="text" id="nounPl2Input">
+    </div>
+    <div class="eighteen">
+        <button id="nounPl2RandomButton" class="button">Randomize</button>
+    </div>
+    <div class="nineteen">
+        <p class="wordPrompt">Emotion</p>
+    </div>
+    <div class="twenty">
+        <input type="text" id="emotionInput">
+    </div>
+    <div class="twentyone">
+        <button id="emotionRandomButton" class="button">Randomize</button>
+    </div>
+    <div class="twentytwo">
+        <p class="wordPrompt">Noun</p>
+    </div>
+    <div class="twentythree">
+        <input type="text" id="noun2Input">       
+    </div>
+    <div class="twentyfour">
+        <button id="noun2RandomButton" class="button">Randomize</button>
+    </div>
+    <div class="twentyfive">
+        <p class="wordPrompt">Place</p>     
+    </div>
+    <div class="twentysix">
+        <input type="text" id="placeInput">
+    </div>
+    <div class="twentyseven">
+        <button id="placeRandomButton" class="button">Randomize</button>
+    </div>
+    <div class="twentyeight">
+        <p class="wordPrompt">Activity</p>
+    </div>
+    <div class="twentynine">
+        <input type="text" id="activityInput">
+    </div>
+    <div class="thirty">
+        <button id="activityRandomButton" class="button">Randomize</button>
+    </div>
 </div>
 
-<!--test area
-
-
-		<p>
-            <script>
-            document.write(randomAdjective);
-            </script>
-        </p>
+<div class="centerDiv">
+    <button id="go" class="goButton" style="margin-top: 20px">Go!</button>
 </div>
--->
+
+
+
+
 
 <!-- Story Box -->
 
-	<div class="mainStory">
-		<p>Stephen King’s <script>document.write(input1)</script> vision of a world blasted by <script>document.write(input2)</script> and tangled in an elemental struggle between good and evil remains as riveting and eerily plausible as when it was first published.</p>
+	<div id="story" class="mainStory hidden">
+		<p>Stephen King’s <span id="adj1"></span> vision of a world blasted by <span id="nounPl1"></span> and tangled in an elemental struggle between good and evil remains as riveting and eerily plausible as when it was first <span id="verbPastTense1"></span>.</p>
 
-		<p>A patient escapes from a biological testing facility, unknowingly carrying a deadly weapon: a mutated strain of super-flu that will wipe out 99 percent of the world’s population within a few weeks. Those who remain are scared, bewildered, and in need of a leader. Two emerge—Mother Abagail, the benevolent 108-year-old woman who urges them to build a peaceful community in Boulder, Colorado; and Randall Flagg, the nefarious “Dark Man,” who delights in chaos and violence. As the dark man and the peaceful woman gather power, the survivors will have to choose between them—and ultimately decide the fate of all humanity.</p>
+		<p>A <span id="noun1"></span> escapes from a biological testing facility, unknowingly carrying a <span id="adj2"></span> weapon: a mutated strain of super-flu that will wipe out 99 percent of the world’s <span id="nounPl2"></span> within a few weeks. Those who remain are scared, <span id="emotion1"></span>, and in need of a <span id="noun2"></span>. Two emerge—Mother Abagail, the benevolent 108-year-old woman who urges them to build a peaceful community in <span id="place1"></span>; and Randall Flagg, the nefarious “Dark Man,” who delights in chaos and <span id="activity1"></span>. As the dark man and the peaceful woman gather power, the survivors will have to choose between them—and ultimately decide the fate of all humanity.</p>
 	</div>
 
 	<script src="kingLibs.js"></script>

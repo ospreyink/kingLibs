@@ -1,105 +1,251 @@
-* {
-    
-    
+.wrapper {
+    display: grid;
+    grid-template-columns: 1fr 204px 1fr;
+    grid-auto-rows: 40px;
+    grid-column-gap: 20px;
 }
 
-.center-div {
-    width: 100%;
+.one {
+  grid-column: 1;
+  grid-row: 1;
+  text-align: right;
+}
+
+.two { 
+  grid-column: 2;
+  grid-row: 1;
+}
+
+.three {
+  grid-column: 3/3;
+  grid-row: 1;
+}
+
+.four {
+    grid-column: 1;
+    grid-row: 2;
+    text-align: right;
+}
+
+.five { 
+    grid-column: 2;
+    grid-row: 2;
+}
+
+.six {
+    grid-column: 3;
+    grid-row: 2;
+}
+
+.seven {
+    grid-column: 1;
+    grid-row: 3;
+    text-align: right;
+}
+
+.eight { 
+    grid-column: 2;
+    grid-row: 3;
+}
+
+.nine {
+    grid-column: 3;
+    grid-row: 3;
+}
+
+.ten {
+    grid-column: 1;
+    grid-row: 4;
+    text-align: right;
+}
+
+.eleven { 
+    grid-column: 2;
+    grid-row: 4;
+}
+
+.twelve {
+    grid-column: 3;
+    grid-row: 4;
+}
+
+.thirteen {
+    grid-column: 1;
+    grid-row: 5;
+    text-align: right;
+}
+
+.fourteen { 
+    grid-column: 2;
+    grid-row: 5;
+}
+
+.fifteen {
+    grid-column: 3;
+    grid-row: 5;
+}
+
+.sixteen {
+    grid-column: 1;
+    grid-row: 6;
+    text-align: right;
+}
+
+.seventeen { 
+    grid-column: 2;
+    grid-row: 6;
+}
+
+.eighteen {
+    grid-column: 3;
+    grid-row: 6;
+}
+
+.nineteen {
+    grid-column: 1;
+    grid-row: 7;
+    text-align: right;
+}
+
+.twenty { 
+    grid-column: 2;
+    grid-row: 7;
+}
+
+.twentyone {
+    grid-column: 3;
+    grid-row: 7;
+}
+
+.twentytwo {
+    grid-column: 1;
+    grid-row: 8;
+    text-align: right;
+}
+
+.twentythree { 
+    grid-column: 2;
+    grid-row: 8;
+}
+
+.twentyfour {
+    grid-column: 3;
+    grid-row: 8;
+}
+
+.twentyfive {
+    grid-column: 1;
+    grid-row: 9;
+    text-align: right;
+}
+
+.twentysix { 
+    grid-column: 2;
+    grid-row: 9;
+}
+
+.twentyseven {
+    grid-column: 3;
+    grid-row: 9;
+}
+
+.twentyeight {
+    grid-column: 1;
+    grid-row: 10;
+    text-align: right;
+}
+
+.twentynine { 
+    grid-column: 2;
+    grid-row: 10;
+}
+
+.thirty {
+    grid-column: 3;
+    grid-row: 10;
+}
+
+.centerDiv {
     text-align: center;
-    display: inline-block;
-   margin: 0 auto;
-   
 }
-
 
 h1, h2 {
     text-align: center;
-    margin-top: 0;
-    
-    
-    
+    margin-top: 0;   
 }
 
 h1 {
     font-family: 'Permanent Marker', cursive;
     letter-spacing: 3px;
     font-size: 69px;
-    margin-bottom: 0;
-    
+    margin-bottom: 0;  
 }
 
 h2 {
-    font-size: 16px;
+    font-size: 18px;
     font-weight: normal;
-
 }
-
 
 body {
-
     font-family: 'Lato', sans-serif;
     margin-bottom: 40px;
-    
-}
-
-p {
-    
-    
 }
 
 input {
     width: 200px;
     height: 30px;
-    margin: 0px 20px;
-
     font-size: 18px;
     background: #f2f2f2;
     border-style: solid;
     border-width: 0px 1px 0px 1px;
     border-color: lightgreen;
-    
+    text-align: center;
 }
 
 /* word prompt styling */
 
 .wordPrompt {
-    
+    margin-top: 7px;
     font-size: 14px;
     text-transform: uppercase;
-    
 }   
-
-
 
 /* button styling */
 
 .button {
-    background-color: #e6e6e6;
+    background-color: #f2f2f2;
     border: 0px;
     font-size: 14px;
     border-radius: 5px;
-    padding: 7px 10px;
-    
-    
-    
+    padding: 7px 10px;   
+}
+
+.goButton {
+    background-color: lightgreen;
+    border: 0px;
+    font-size: 14px;
+    border-radius: 5px;
+    padding: 7px 10px;   
 }
 
 /* synopsis styling */
 
 .mainStory {
-    width: 800px;
+    width: 50%;
     margin: auto;
+    margin-top: 60px;
     background-color: #e6e6e6;
     padding: 20px 40px;
     border-radius: 10px;
-    
-    
 }
 
 .mainStory p {
-
+    text-align: left;
     font-family: serif;
     font-size: 22px;
     text-transform: none;
-    
+}
+
+.hidden {
+    visibility: hidden;
 }
