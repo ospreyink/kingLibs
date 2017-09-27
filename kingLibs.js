@@ -1,12 +1,12 @@
 // Random Words
 
-var activity = [null, "playing dress up", "huffing paint", "bowling", "masturbating", "drinking tea", "coding", "painting", "ball room dancing", "fishing"]
-var noun = [null, "lunch box", "Corvette", "puppy", "bowl of soup", "Cheese Doodle", "saxophone", "TV series", "Tupperware", "enema"]
-var place = [null, "WalMart", "a bowling alley", "the bathroom", "Lake Titicaca", "the North Pole", "the bottom of the ocean", "the Moon", "Trump's pants", "Hell"]
-var nounPl = [null, "websites", "nacho cheese dip", "farts", "Post It notes", "fingernails", "beer bottles", "marigolds", "car seats", "library books"]
+var activity = [null, "playing dress up", "huffing paint", "bowling", "romantic walks", "drinking tea", "javaScript coding", "painting", "ball room dancing", "fishing"]
+var noun = [null, "lunch box", "Corvette", "puppy", "bowl of soup", "Cheese Doodle", "saxophone", "TV series", "Tupperware", "sock monkey"]
+var place = [null, "WalMart", "a bowling alley", "the bathroom", "Lake Titicaca", "the North Pole", "the bottom of the ocean", "the Moon", "Trump's pants", "a haunted house"]
+var nounPl = [null, "websites", "nacho cheese dip", "blue footed boobies", "Post It notes", "fingernails", "beer bottles", "marigolds", "car seats", "library books"]
 var adjective = [null, "saucy", "bumpy", "slippery", "salty", "furry", "lice-infested", "flame-retardant", "difficult", "wet"]
-var emotion = [null, "horny", "devious", "dim-witted", "hungover", "gleeful", "lazy", "envious", "ashamed", "indignant"]
-var verbPastTense = [null, "aborted", "panhandled", "drank", "hitchhiked", "poured", "farted", "moisturized", "bathed", "snowboarded"]
+var emotion = [null, "peevish", "devious", "dim-witted", "hungover", "gleeful", "lazy", "envious", "ashamed", "enthusiastic"]
+var verbPastTense = [null, "detected", "panhandled", "drank", "hitchhiked", "poured", "wasted", "moisturized", "bathed", "snowboarded"]
 
 
 // Selectors
