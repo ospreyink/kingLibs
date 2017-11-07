@@ -14,6 +14,7 @@ var verbPastTense = [null, "detected", "panhandled", "drank", "hitchhiked", "pou
 var randomizeAllButton = document.querySelector("#randomizeAllButton");
 var go = document.querySelector("#go");
 var storyDisplay = document.querySelector("#story");
+var reset = document.querySelector("#reset");
 
 var adj1Input = document.querySelector("#adj1Input");
 var nounPl1Input = document.querySelector("#nounPl1Input");
@@ -187,8 +188,37 @@ randomizeAllButton.addEventListener("click", function(){
 
 });
 
-// Generate Story Button
+// Generate Story & Reset Buttons
+var isStoryDisplayed = false;
 
 go.addEventListener("click", function(){
 	storyDisplay.classList.toggle("hidden");
+	isStoryDisplayed = !isStoryDisplayed;
+});
+
+reset.addEventListener("click", function(){
+	if(isStoryDisplayed === true){
+		storyDisplay.classList.toggle("hidden");
+		isStoryDisplayed = !isStoryDisplayed;
+	};
+	adj1.textContent = null;
+	adj1Input.value = null;
+	nounPl1.textContent = null;
+	nounPl1Input.value = null;
+	verbPastTense1.textContent = null;
+	verbPastTenseInput.value = null;
+	noun1.textContent = null;
+	noun1Input.value = null;
+	adj2.textContent = null;
+	adj2Input.value = null;
+	nounPl2.textContent = null;
+	nounPl2Input.value = null;
+	emotion1.textContent = null;
+	emotionInput.value = null;
+	noun2.textContent = null;
+	noun2Input.value = null;
+	place1.textContent = null;
+	placeInput.value = null;
+	activity1.textContent = null;
+	activityInput.value = null;
 });
