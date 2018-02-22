@@ -1,12 +1,12 @@
 // Random Words
 
-var activity = [null, "playing dress up", "huffing paint", "bowling", "romantic walks", "drinking tea", "javaScript coding", "painting", "ball room dancing", "fishing"]
-var noun = [null, "lunch box", "Corvette", "puppy", "bowl of soup", "Cheese Doodle", "saxophone", "TV series", "Tupperware", "sock monkey"]
-var place = [null, "WalMart", "a bowling alley", "the bathroom", "Lake Titicaca", "the North Pole", "the bottom of the ocean", "the Moon", "Trump's pants", "a haunted house"]
-var nounPl = [null, "websites", "nacho cheese dip", "blue footed boobies", "Post It notes", "fingernails", "beer bottles", "marigolds", "car seats", "library books"]
-var adjective = [null, "saucy", "bumpy", "slippery", "salty", "furry", "lice-infested", "flame-retardant", "difficult", "wet"]
-var emotion = [null, "peevish", "devious", "dim-witted", "hungover", "gleeful", "lazy", "envious", "ashamed", "enthusiastic"]
-var verbPastTense = [null, "detected", "panhandled", "drank", "hitchhiked", "poured", "wasted", "moisturized", "bathed", "snowboarded"]
+var activity = ["playing dress up", "huffing paint", "bowling", "romantic walks on the beach", "drinking tea", "javaScript coding", "painting", "ball room dancing", "fishing"]
+var noun = ["lunch box", "Corvette", "puppy", "bowl of soup", "Cheese Doodle", "saxophone", "TV series", "Tupperware", "sock monkey"]
+var place = ["WalMart", "a bowling alley", "the bathroom", "Lake Titicaca", "the North Pole", "the bottom of the ocean", "the Moon", "Trump's pants", "a haunted house"]
+var nounPl = ["websites", "nacho cheese dip", "blue footed boobies", "Post It notes", "fingernails", "beer bottles", "marigolds", "car seats", "library books"]
+var adjective = ["saucy", "bumpy", "slippery", "salty", "furry", "lice-infested", "flame-retardant", "difficult", "wet"]
+var emotion = ["peevish", "devious", "dim-witted", "hungover", "gleeful", "lazy", "envious", "ashamed", "enthusiastic"]
+var verbPastTense = ["detected", "panhandled", "drank", "hitchhiked", "poured", "wasted", "moisturized", "bathed", "snowboarded"]
 
 
 // Selectors
@@ -83,61 +83,61 @@ activityInput.addEventListener("change", function(){
 // Random Input
 
 adj1RandomButton.addEventListener("click", function(){  
-	var x = Math.floor((Math.random() * 9) + 1);;
+	var x = Math.floor(Math.random() * adjective.length);
 	adj1.textContent = adjective[x];
 	adj1Input.value = adjective[x];
 });
 
 nounPl1RandomButton.addEventListener("click", function(){  
-	var x = Math.floor((Math.random() * 9) + 1);;
+	var x = Math.floor(Math.random() * nounPl.length);
 	nounPl1.textContent = nounPl[x];
 	nounPl1Input.value = nounPl[x];
 });
 
 verbPastTenseRandomButton.addEventListener("click", function(){  
-	var x = Math.floor((Math.random() * 9) + 1);;
+	var x = Math.floor(Math.random() * verbPastTense.length);
 	verbPastTense1.textContent = verbPastTense[x];
 	verbPastTenseInput.value = verbPastTense[x];
 });
 
 noun1RandomButton.addEventListener("click", function(){  
-	var x = Math.floor((Math.random() * 9) + 1);;
+	var x = Math.floor(Math.random() * noun.length);
 	noun1.textContent = noun[x];
 	noun1Input.value = noun[x];
 });
 
 adj2RandomButton.addEventListener("click", function(){  
-	var x = Math.floor((Math.random() * 9) + 1);;
+	var x = Math.floor(Math.random() * adjective.length);
 	adj2.textContent = adjective[x];
 	adj2Input.value = adjective[x];
 });
 
 nounPl2RandomButton.addEventListener("click", function(){  
-	var x = Math.floor((Math.random() * 9) + 1);;
+	var x = Math.floor(Math.random() * nounPl.length);
 	nounPl2.textContent = nounPl[x];
 	nounPl2Input.value = nounPl[x];
 });
 
 emotionRandomButton.addEventListener("click", function(){  
-	var x = Math.floor((Math.random() * 9) + 1);;
+	var x = Math.floor(Math.random() * emotion.length);
 	emotion1.textContent = emotion[x];
 	emotionInput.value = emotion[x];
 });
 
 noun2RandomButton.addEventListener("click", function(){  
-	var x = Math.floor((Math.random() * 9) + 1);;
+	var x = Math.floor(Math.random() * noun.length);
 	noun2.textContent = noun[x];
 	noun2Input.value = noun[x];
 });
 
 placeRandomButton.addEventListener("click", function(){  
-	var x = Math.floor((Math.random() * 9) + 1);;
+	var x = Math.floor(Math.random() * place.length);
 	place1.textContent = place[x];
 	placeInput.value = place[x];
 });
 
 activityRandomButton.addEventListener("click", function(){  
-	var x = Math.floor((Math.random() * 9) + 1);;
+	var x = Math.floor(Math.random() * activity.length);
 	activity1.textContent = activity[x];
 	activityInput.value = activity[x];
 });
@@ -145,46 +145,46 @@ activityRandomButton.addEventListener("click", function(){
 // Randomize All Button
 
 randomizeAllButton.addEventListener("click", function(){
-	 
-		var x = Math.floor((Math.random() * 9) + 1);;
-		adj1.textContent = adjective[x];
-		adj1Input.value = adjective[x];
 
-		var x = Math.floor((Math.random() * 9) + 1);;
-		nounPl1.textContent = nounPl[x];
-		nounPl1Input.value = nounPl[x];
- 
-		var x = Math.floor((Math.random() * 9) + 1);;
-		verbPastTense1.textContent = verbPastTense[x];
-		verbPastTenseInput.value = verbPastTense[x];
-	
-		var x = Math.floor((Math.random() * 9) + 1);;
-		noun1.textContent = noun[x];
-		noun1Input.value = noun[x];
+	var x = Math.floor(Math.random() * adjective.length);
+	adj1.textContent = adjective[x];
+	adj1Input.value = adjective[x];
 
-		var x = Math.floor((Math.random() * 9) + 1);;
-		adj2.textContent = adjective[x];
-		adj2Input.value = adjective[x];
-	
-		var x = Math.floor((Math.random() * 9) + 1);;
-		nounPl2.textContent = nounPl[x];
-		nounPl2Input.value = nounPl[x];
-	
-		var x = Math.floor((Math.random() * 9) + 1);;
-		emotion1.textContent = emotion[x];
-		emotionInput.value = emotion[x];
-	
-		var x = Math.floor((Math.random() * 9) + 1);;
-		noun2.textContent = noun[x];
-		noun2Input.value = noun[x];
-	
-		var x = Math.floor((Math.random() * 9) + 1);;
-		place1.textContent = place[x];
-		placeInput.value = place[x];
-	
-		var x = Math.floor((Math.random() * 9) + 1);;
-		activity1.textContent = activity[x];
-		activityInput.value = activity[x];
+	var x = Math.floor(Math.random() * nounPl.length);
+	nounPl1.textContent = nounPl[x];
+	nounPl1Input.value = nounPl[x];
+
+	var x = Math.floor(Math.random() * verbPastTense.length);
+	verbPastTense1.textContent = verbPastTense[x];
+	verbPastTenseInput.value = verbPastTense[x];
+
+	var x = Math.floor(Math.random() * noun.length);
+	noun1.textContent = noun[x];
+	noun1Input.value = noun[x];
+
+	var x = Math.floor(Math.random() * adjective.length);
+	adj2.textContent = adjective[x];
+	adj2Input.value = adjective[x];
+
+	var x = Math.floor(Math.random() * nounPl.length);
+	nounPl2.textContent = nounPl[x];
+	nounPl2Input.value = nounPl[x];
+
+	var x = Math.floor(Math.random() * emotion.length);
+	emotion1.textContent = emotion[x];
+	emotionInput.value = emotion[x];
+
+	var x = Math.floor(Math.random() * noun.length);
+	noun2.textContent = noun[x];
+	noun2Input.value = noun[x];
+
+	var x = Math.floor(Math.random() * place.length);
+	place1.textContent = place[x];
+	placeInput.value = place[x];
+
+	var x = Math.floor(Math.random() * activity.length);
+	activity1.textContent = activity[x];
+	activityInput.value = activity[x];
 
 });
 
